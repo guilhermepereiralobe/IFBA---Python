@@ -3,19 +3,16 @@
 # A = b X h
 # A é a área, b é a base e h é a altura.
 
-def calcular_ratangulo(bd, hd):
-    if bd >= 1 and hd >= 1:
-        a = bd * hd
-        print(f'A área de um retângulo com a base {bd}cm e altura de {hd}cm é igual a {a}cm²')
-    else:
-        print("Faça de novo.")
+try:
+    b = float(input('O valor da base: '))
+    h = float(input('O valor da altura: '))
+    a = b * h
 
+    print(f'A área de um retângulo com a base de {b} cm e a altura de {h} cm é {a}')
+except :
+    print('Digite a base ou altura apenas com números e, o calculo já é em cm, ou seja, não precisa colocar ele.')
+    print()
 # Repetição.
-while True:
-    b = float(input('[cm] Valor da base: '))
-    h = float(input('[cm] Valor da altura: '))
-    print(calcular_ratangulo(bd=b, hd=h))
-    
 # Função.
 # Validação do número.
 # Tratamento de erro.
