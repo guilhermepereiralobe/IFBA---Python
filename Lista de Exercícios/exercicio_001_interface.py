@@ -9,3 +9,5 @@ cg.register(False, False)
 cg._set_appearance_mode("light")
 
 cg.mainloop()
+
+# Novo.
