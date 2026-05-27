@@ -4,7 +4,7 @@ from customtkinter import *
 cg = CTk()
 cg.title('Calculadora Geométrica')
 cg.geometry('600x400')
-cg.register(False, False)
+cg.resizable(False, False)
 cg._set_appearance_mode("light")
 
 cg_frame = CTkFrame(
