@@ -171,4 +171,38 @@ botao = CTkButton(
 )
 botao.place(x=435, y=149)
 
+
+entrada = {
+    'width':196,
+    "height":45,
+    'border_width':4,
+    'corner_radius':10,
+    'border_color':'#000000'
+}
+
+entrada_b = CTkEntry(
+    cg_frame, **entrada,
+    placeholder_text='Qual o valor da base?',
+    font=('Garet', 12),
+)
+entrada_b.place(x=392, y=40)
+
+entrada_h = CTkEntry(
+    cg_frame, **entrada,
+    placeholder_text='Qual o valor da altura?',
+    font=('Garet', 12)
+)
+entrada_h.place(x=392, y=92)
+
+area = CTkLabel(
+    cg_frame,
+    width=196,
+    height=46,
+    corner_radius=10,
+    fg_color='#ffffff',
+    text=f"{a} cm³",
+    font=('Garet', 18)
+)
+area.place(x=392, y=314)
+
 cg.mainloop()
